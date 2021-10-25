@@ -1,0 +1,113 @@
+.login-section{
+    margin: 100px;
+}
+
+.login-failed, .register-success{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 65%;    
+    background-color: rgb(88, 16, 221);
+}
+
+.login-failed-text, .register-success-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;    
+    color: rgb(255, 255, 255);
+}
+.card-body{
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+    border-color: none;
+}
+.card{
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+    width: 100%;
+    
+}
+
+
+.btn41-43 {
+    padding: 5px 65px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .btn-42 {
+    border: 1px solid cornflowerblue;
+    z-index: 1;
+    color: cornflowerblue;
+    border-radius: 5px;
+  }
+  
+  .btn-42:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: cornflowerblue;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .btn-42:hover {
+    color: rgb(250, 250, 250);
+    border-radius: 5px;
+  }
+  
+  .btn-42:hover:after {
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .btn-42:active {
+    top: 2px;
+    border-radius: 5px;
+  }
+  
+
+body {
+
+    width:100%;
+    overflow-y: auto;
+    
+    min-height:100%; 
+  
+  }
+  
+  body {
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

@@ -1,0 +1,60 @@
+<html>
+  <body>
+<div class="container">
+  <div class="grid">
+  <div class="row">
+    <hr />
+    <div class="col-md-9">
+      <div class="row post">
+        
+        <div class="col-md-11">
+          
+          
+          <a routerLink="post.url" class="post-title">{{post.postName}}</a>
+          <hr />
+          <span>
+            <span class="subissues-text"><a class="post-url" href="">{{post.subissuesName}}</a></span>
+            &nbsp;<span>This Issue was Created
+              by              
+              <a class="subissues-text" href="">{{post.userName}}</a>
+            </span>
+          </span>
+          
+          <br>
+          <div>
+            <br>
+            <p class="subissues-text">Description:</p>
+            <p class="post-text" [innerHtml]="post.description"></p>
+          </div>
+          <div class="post-comment">
+            <form [formGroup]="commentForm" (ngSubmit)="postComment()">
+              <div class="form-group">
+                <textarea class="form-control" [formControlName]="'text'" placeholder="Add Your Analysis here"></textarea>
+              </div> <app-vote-button [post]="post" style="display: inline-block;" ></app-vote-button>
+              <button type="submit" style="display: inline-block;" class="btn41-43 btn-42 float-right" >Submit</button>
+            </form>
+          </div>
+          <div style="margin-top: 60px;" *ngFor="let comment of comments">
+            <div class="comment">
+              <div class="username">
+                <a routerLink="/user/comment.username">{{comment.userName}}</a>
+              </div>
+              <div>
+                <p>{{comment.duration}}</p>
+              </div>
+              <p class="post-text" [innerHtml]="comment.text"></p>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <app-side-bar></app-side-bar>
+      <app-subissues-side-bar></app-subissues-side-bar>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

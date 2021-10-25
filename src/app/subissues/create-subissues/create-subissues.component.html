@@ -1,0 +1,52 @@
+<body>
+ 
+    <div class=" grid-container">
+      <div class="page-wrap">
+      <div class="grid">
+    <div class="row">
+      <br>
+      <div class="create-subissues-container">
+        
+        <form class="post-form" [formGroup]="createSubissuesForm" (ngSubmit)="createSubissues()">
+          
+          <div class="form-group">
+            <div class="create-subissues-heading">CREATE NEW APPLICATION</div>
+         
+            <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 10px"
+              placeholder="Title">
+            
+              <textarea class="form-control" [formControlName]="'description'" aria-label="With textarea" style="margin-top: 10px; margin-bottom: 5px; height: 70px;" placeholder="Description"></textarea>
+            <div>
+              <div style="margin-top: 5px" class="float-right">
+                <button (click)="discard()" class="btn41-43 btn-42">Discard</button>
+                &nbsp;
+                <button class="btn41-43 btn-42">Create</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div >
+        <div class="float-left">
+        <div class="sidebar">
+          <br>
+          <h5 class="guidelines">Creating an Issue Analysis Application</h5>
+          <hr class="new3"/>
+          <ul>
+            <li>Do not Create a New Application with Already Existing Name</li>
+            <br>
+            <li>Create Sub-Application for any particular issue</li>
+            <br>
+            <li>Provide the Sub-Application or New Application Link with Description</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+</body>

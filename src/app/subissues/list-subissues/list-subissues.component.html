@@ -1,0 +1,35 @@
+<body>
+     <div class="grid-container"> 
+      <div class="grid">
+      <div class="poste">
+      
+      <ul style="list-style-type:none;" id="ul_top_hypers">
+        <br>
+        <a class="post-titles" style="text-align: 100;">List of Application</a>
+        <hr />
+        <div class="form-group">
+          <label for="inputsearch" class="post-title">Search by Application Name:</label>
+         
+          <input type="text" [(ngModel)]="term" post.postName="term" class="form-control" style="width: 300px; height: 30px; " >
+          <br>
+          <br>
+          
+      </div>
+      
+        <li *ngFor="let subissues of subissuess |filter:term" >
+         
+            <a routerLink="/view-subissues/{{subissues.id}}" class="post-title" style="text-align: left;">{{subissues.name}}</a>
+            <p class="post-text">{{ (subissues.description.length>6)? (subissues.description | slice:0:10)+'..':(subissues.description) }}</p>
+           
+        
+          <hr />
+          <br>
+          <br>
+           
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+  </div> 
+    </body>

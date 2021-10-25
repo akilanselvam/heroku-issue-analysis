@@ -1,0 +1,33 @@
+<body>
+<div class="container">
+  <div class="grid">
+  <div>
+    <marquee behavior="scroll" direction="left">
+    Hi! <b>{{name}}</b>.&nbsp;You have Contributed <b>{{postLength}}</b> Issue Analysis and
+    <b>{{commentLength}}</b> Suggestions. Scroll below to Check Issue Analysis done by you
+  </marquee>
+  </div>
+  <hr />
+  <div>
+   <b>Your Issue Analysis:</b>
+  </div>
+  <app-post-tile [posts]="posts"></app-post-tile>
+  <hr />
+  <div>
+   <b> Your Suggestions:</b>
+  </div>
+  <div *ngFor="let comment of comments">
+    <div class="comment">
+      <div class="username">
+        <a routerLink="/user/comment.username">{{comment.userName}}</a>
+      </div>
+      <div>
+        <p>{{comment.duration}}</p>
+      </div>
+      <b>{{comment.text}}</b>
+    </div>
+    <hr />
+  </div>
+  </div>
+</div>
+</body>

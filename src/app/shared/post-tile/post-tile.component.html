@@ -1,0 +1,30 @@
+<!-- Display Posts-->
+<div class="row box1" *ngFor="let post of posts ">
+  
+  <!-- Section to Display Post Information-->
+  <div class="col-md-12">
+    <div class="post-title">
+      <a class="postname" (click)="goToPost(post.id)">{{post.postName}} </a>
+     
+    </div>
+    <hr class="new3">
+    
+    <div>
+      <p class="post-text" [innerHtml]="post.description " ></p>
+    </div>
+    <hr class="new3">
+    <span class="subissues-info">
+      <span class="subissues-text"><a class="posturl" routerLink="">{{post.subissuesName}}</a></span>
+      <span> Created by <a class="username" routerLink="/user/{{post.userName}}">{{post.userName}}</a></span>
+      
+    </span>
+    <span>
+      <app-vote-button [post]="post" class="float-right">
+      <button class="login" class="login float-right" (click)="goToPost(post.id)">
+        Read Post
+      </button>
+    </app-vote-button>
+    </span>
+  </div>
+
+</div>

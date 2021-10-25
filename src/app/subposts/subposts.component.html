@@ -1,0 +1,28 @@
+<body>
+    <div class="grid-container">
+   <div class="grid">    
+   
+<ul *ngIf="posts" style="list-style-type:none;">
+    <div class="poste">
+    <li *ngFor="let post of posts | slice:0:1">
+        <br>
+        <a class="post-titles">"{{postsLength}}" issue found under the application name: {{ post.subissuesName}}</a>
+       </li>
+       <br>
+       <div class="form-group">
+        <label for="inputsearch" class="post-title">Search by Issue</label>
+        <input type="text" [(ngModel)]="term" post.postName="term" class="form-control" style="width: 300px; height: 30px; ">
+    </div>
+    <hr />
+<li *ngFor="let post of posts |filter:term">
+    
+    <a (click)="goToPost(post.id)" class="post-title">{{post.postName}}</a>
+    <p class="post-text">This Post Was Created By {{post.userName}} and this post has {{post.voteCount}} recommendations</p>
+      <hr />
+
+</li>
+</div>
+</ul>
+</div>
+</div>
+</body>

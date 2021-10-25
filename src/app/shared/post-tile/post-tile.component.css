@@ -1,0 +1,58 @@
+.post{
+      
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.8);
+    color: #878A8C;
+    position: relative;
+    border-radius: 4px;
+    padding:2px;
+    width: 800px;
+}
+
+.btnCommments{
+    border-radius: 2px solid;
+    color: #878A8C;
+    opacity: 1;
+}
+
+hr.new3 {
+    border-top: 1px dotted rgb(255, 255, 255);
+  }
+.btnCommments:hover{
+    opacity: 0.65;
+    cursor: pointer;
+}
+.box1 {
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    padding:2px;
+    
+}
+
+.post-title{
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1;
+    color: cornflowerblue;
+}
+
+.posturl, .postname{    
+    color: rgb(255, 0, 0);
+}
+
+.subissues-text{
+    font-weight: bold;
+}
+
+.post-text{
+    margin-top: 10px;
+}

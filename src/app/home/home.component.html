@@ -1,0 +1,105 @@
+
+<html>  
+<body>
+<div class="page-wrap">
+
+  
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-md-3" style="margin-left: -60px;">
+            
+            <app-side-bar>
+             
+            </app-side-bar>
+            
+<p class="wiggle">
+  <button class="button button"><a href="mailto:akilan.s@cognizant.com?cc=arunselvajeromias.arulappan@cognizant.com&subject=Reg%3A%20Problem%20in%20Issue%20Analysis%20Application">
+    <fa-icon class="downvote" [icon]="famailbulk" >
+    </fa-icon>&nbsp;&nbsp;Contact US</a></button>
+  </p>    
+          </div>
+  
+         
+        <div class="col-lg-4  ridl">
+          <div class="fullbx">
+          <div class="card">
+              <div class="card-header ">
+                <p class="card-category">Analysis Count</p>
+                 
+                  <h3 class="card-title" style="color: green;">{{postLength}}</h3>
+              </div>
+              <div class="card-footer">
+                  <div class="stats">
+                    
+                    <fa-icon class="downvote" [icon]="faglobeasia" >
+                    </fa-icon> &nbsp;Total Number of Analysis Available
+                  </div>
+              </div>
+         </div>
+          </div>
+      </div>
+
+          
+      <div class="col-lg-4  ridr">
+        <div class="fullbx">
+        <div class="card">
+            <div class="card-header ">
+              <p class="card-category">Application Name</p>
+              <ng-container *ngFor="let subissues of subissuess; let i = index;">
+                <li *ngIf="i > subissuess.length - 2" style="list-style-type:none;">
+               
+                  <h3 routerLink="/view-subissues/{{subissues.id}}" style="font-weight: bold;margin-bottom: 12px;color: red;" >{{subissues.name}}</h3> 
+                  
+               
+                </li>
+              </ng-container>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                  
+                  <fa-icon class="downvote" [icon]="faadn" >
+                  </fa-icon> &nbsp;Recently Added Application
+                </div>
+            </div>
+       </div>
+        </div>
+    </div>
+            
+    <div class="col-lg-8 rids">
+      <div class="fullbxs">
+      <div class="cards">
+          <div class="card-header ">
+            <p class="card-category">Important</p>
+          
+            <p class="item-1 aligns">Update each and every Query inside the Log Update Application</p>
+
+<p class="item-2 aligns">Provide Your Analysis on every issue done by you if possible.</p>
+
+<p class="item-3 aligns">Do Not Create New application if its already existed.</p>
+           <br>
+          </div>
+          <div class="card-footer">
+              <div class="stats">
+                
+                <fa-icon class="downvote" [icon]="fabell" >
+                </fa-icon> &nbsp;Productive Information
+              </div>
+          </div>
+     </div>
+      </div>
+  </div>
+  
+          <div class="col-md-9 postalign" >
+          
+  
+            <app-post-tile [posts]="posts"></app-post-tile>
+         
+          </div>
+         
+        </div>
+      </div>
+     </div>
+   
+  </body>
+    </html>
